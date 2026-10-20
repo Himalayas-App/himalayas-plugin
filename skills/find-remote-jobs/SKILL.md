@@ -39,8 +39,8 @@ jobs matching their profile posted since an agent last checked.
 
 - **Plus:** the reply lists the jobs and moves the check-in point, so the next
   call returns only newer ones.
-- **Free:** the reply gives the number of new matches and a note about Plus.
-  Pass the note on once (see himalayas-basics), then do the free version: run
+- **Free:** the reply gives the number of new matches; listing them needs
+  Plus. Say so plainly (see himalayas-basics), then do the free version: run
   `search_jobs` for the user's primary role and location with `sort: recent`.
 - **Profile incomplete:** the reply lists what is missing. Offer
   [build-candidate-profile](../build-candidate-profile/SKILL.md), and search in
