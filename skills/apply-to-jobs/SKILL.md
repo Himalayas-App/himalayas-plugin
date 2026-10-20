@@ -26,8 +26,7 @@ can edit them and download a PDF. Check the plan in `get_my_profile` first:
 - **Free, not used yet:** a free account gets one tailored resume and one cover
   letter, ever. Say so, and use them only if the user wants them for this job.
 - **Free, already used:** skip this step and apply with the user's own resume.
-  If the tool reply says the free documents are used, pass on its Plus note
-  once (see himalayas-basics), then carry on.
+  If the tool reply says the free documents are used, say so and carry on.
 
 Pass `documents` to make only one of the two. A second call for the same job
 returns the documents already made, without using anything up.
