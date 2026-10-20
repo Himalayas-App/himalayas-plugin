@@ -47,9 +47,11 @@ long it is kept, and how to contact us. Questions: hi@himalayas.app.
 
 | Command | What it does |
 | --- | --- |
+| `/himalayas:start` | Connects your account, checks your plan and profile, suggests next steps. |
 | `/himalayas:find-jobs` | Searches remote jobs and shortlists the best fits. |
-| `/himalayas:matches` | Shows new jobs matching your profile since the last check. |
-| `/himalayas:apply` | Prepares an application: fit check, documents, answers, apply link. |
+| `/himalayas:matches` | New jobs for your profile since the last check (a fresh search on Free). |
+| `/himalayas:apply` | Prepares an application: fit check, documents, answers, apply link, on any plan. |
+| `/himalayas:interview` | Likely questions, a practice link and a practice round in chat. |
 | `/himalayas:tracker` | Reviews your tracker and inbox and suggests follow-ups. |
 | `/himalayas:profile` | Reviews your profile and suggests what to add or fix. |
 | `/himalayas:salary` | Benchmarks remote pay by role, seniority and country. |
@@ -69,8 +71,9 @@ task skills are `find-remote-jobs`, `apply-to-jobs`, `track-applications`,
 
 ## Accounts and paid features
 
-A free Himalayas account covers search, the tracker, the profile and
-applying. Himalayas Plus (US$9 a month) adds tailored documents for every job,
+Every command works on a free Himalayas account. A free account covers
+search, salary data, the tracker, the profile, applying, one tailored resume
+and cover letter, and one text mock interview. Himalayas Plus (US$9 a month) adds tailored documents for every job,
 new matches between sessions, spoken interview practice and more. Employers
 post jobs for free, with optional paid extras. Claude mentions paid features
 only when you ask or a task needs one, and you pay on Stripe yourself.

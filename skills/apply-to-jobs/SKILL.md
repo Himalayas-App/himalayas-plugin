@@ -20,15 +20,20 @@ or salary. If the user decides not to apply, offer `skip_job` with the reason.
 
 `generate_application_documents` writes a resume and a cover letter tailored
 to the job from the user's profile and saves them to their account, where they
-can edit them and download a PDF.
+can edit them and download a PDF. Check the plan in `get_my_profile` first:
 
-- Ask first. A free account gets one tailored resume and one cover letter in
-  total, so tell the user before using it. Plus includes them for every job.
-- Pass `documents` to make only one of the two.
-- A second call for the same job returns the documents already made.
-- `list_documents` and `get_document` read them back. `update_document`
-  renames a document or replaces a cover letter's text. Resume content is
-  edited in the website's resume editor.
+- **Plus:** offer to tailor them for this job.
+- **Free, not used yet:** a free account gets one tailored resume and one cover
+  letter, ever. Say so, and use them only if the user wants them for this job.
+- **Free, already used:** skip this step and apply with the user's own resume.
+  If the tool reply says the free documents are used, pass on its Plus note
+  once (see himalayas-basics), then carry on.
+
+Pass `documents` to make only one of the two. A second call for the same job
+returns the documents already made, without using anything up.
+`list_documents` and `get_document` read them back. `update_document` renames
+a document or replaces a cover letter's text; resume content is edited in the
+website's resume editor.
 
 A thin profile makes thin documents. If the profile is missing experience,
 offer [build-candidate-profile](../build-candidate-profile/SKILL.md) first.
@@ -42,7 +47,8 @@ one after the user confirms.
 
 ## 4. Apply
 
-When the user has decided to apply, call `get_apply_link`. It returns the
+When the user has decided to apply, call `get_apply_link`, on any plan.
+Nothing about Plus ever holds this step back. It returns the
 employer's application link and marks the job as applied in the tracker. The
 user opens the link and submits the application. Never fill in the employer's
 form for them. The limit is 50 links per account per day.
@@ -51,7 +57,11 @@ form for them. The limit is 50 links per account per day.
 
 - `get_interview_practice_link` returns the Himalayas page where the user
   practises interviewing for this job, or for a job elsewhere with
-  `application_link`.
+  `application_link`. Free accounts include one text mock interview; spoken
+  mock interviews are Plus (30 minutes a month).
+- Without the link, you can still help: draft likely questions from the job
+  description and the user's profile, and give feedback on their answers in
+  the conversation.
 - `list_interviews` shows past practice and the minutes and credits left.
 - `get_interview_results` returns scores and feedback for one job. Summarise
   the two or three things to work on.

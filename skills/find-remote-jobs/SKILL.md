@@ -35,9 +35,16 @@ expectations from it. Say which profile facts you used.
   enough.
 
 For a signed-in user who wants what is new, call `get_new_matches`. It returns
-jobs matching their profile posted since an agent last checked, and moves that
-check-in point, so a second call returns only newer jobs. A free account gets
-the count only.
+jobs matching their profile posted since an agent last checked.
+
+- **Plus:** the reply lists the jobs and moves the check-in point, so the next
+  call returns only newer ones.
+- **Free:** the reply gives the number of new matches and a note about Plus.
+  Pass the note on once (see himalayas-basics), then do the free version: run
+  `search_jobs` for the user's primary role and location with `sort: recent`.
+- **Profile incomplete:** the reply lists what is missing. Offer
+  [build-candidate-profile](../build-candidate-profile/SKILL.md), and search in
+  the meantime.
 
 ## 3. Shortlist
 

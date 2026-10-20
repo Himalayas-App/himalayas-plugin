@@ -19,10 +19,21 @@ Himalayas tool call.
 | Employer | company profile, perks, company jobs, messages to candidates | An employer account (a company on Himalayas) |
 | Paid posting without an account | `post_job_public` | An email at the company's domain, and payment on Stripe |
 
-The user signs in on himalayas.app the first time an account tool runs, so you
-never see or ask for a password. If a tool says the account is not connected,
-or a scope was not approved, tell the user to reconnect Himalayas from their
-connector settings and approve the access the task needs.
+## Signing in
+
+Search works with no account. The first time a task needs an account tool,
+the user's client asks them to sign in to Himalayas in their browser: with
+Google (which also creates a Himalayas account if they have none) or with a
+Himalayas email login, where they can also sign up. You never see or ask for a
+password.
+
+- If a tool replies that the account isn't connected, tell the user to connect
+  Himalayas from their connector settings (or approve the sign-in prompt), then
+  try again.
+- If a tool replies that a scope wasn't approved, the user connected with less
+  access than the task needs. They reconnect Himalayas and approve it.
+- Employer tools also need the account to own a company on Himalayas. If a tool
+  says it doesn't, the user sets the company up on himalayas.app first.
 
 The full parameter list for every tool is in
 [references/tools.md](references/tools.md).
@@ -60,22 +71,37 @@ Follow these steps for every task that changes the user's account.
   from them. Show the exact text and get an OK before sending.
 - **Personal data stays out of chat** unless the user asks for it. Summarise
   candidates by role, skills and location rather than copying their profile.
-- **Paid features are optional.** Mention Himalayas Plus only when the user
-  asks, or when a tool result says a feature needs it.
+- **Free first.** Every task has a path that works on a free account. Never
+  hold back a free step (search, salary data, the tracker, the profile, the
+  apply link) because a Plus step is unavailable.
 
 ## Free and Plus
 
-These are facts the tools enforce. Tell the user when one applies.
+`get_my_profile` shows the plan (`Plan: Free` or `Plan: Plus`). These limits
+are enforced by the tools:
 
-- A free account gets one tailored resume and one cover letter in total.
-  Plus includes them for every job.
-- `get_new_matches` returns the jobs to Plus members; a free account gets the
-  count.
-- `get_apply_link` allows 50 links per account per day.
-- Daily job-match emails need Plus; free accounts get weekly emails.
-- Plus is US$9 a month. `get_plus_checkout_link` makes a Stripe link the user
-  pays through themselves. `get_billing_portal_link` lets a paying user
-  change or cancel.
+| Feature | Free | Plus (US$9 a month) |
+| --- | --- | --- |
+| Job, company and salary search | Yes | Yes |
+| Tracker, profile, apply links (50 a day), inbox | Yes | Yes |
+| Tailored resume and cover letter | One of each, ever | Every job |
+| New matches (`get_new_matches`) | The count only | The jobs |
+| Interview practice | One text mock interview | 30 minutes a month of spoken mock interviews |
+| Job-match emails | Weekly | Daily |
+| Verified badge ID check | US$5 once | One every 30 days |
+
+How to handle a Plus feature:
+
+1. **Do the free version.** On a free account with no matches list, search
+   for the user's role instead; with the free documents used up, apply with
+   the user's own resume.
+2. **Pass on the tool's note once.** When a tool reply says a feature needs
+   Plus, tell the user in a sentence, using the reply's facts and any checkout
+   link it returned. Don't repeat it later in the conversation, and don't
+   bring Plus up when no tool reply did, unless the user asks.
+3. **Carry on with the task.** The user decides; a checkout link is something
+   they open and pay on Stripe themselves (`get_plus_checkout_link`).
+   `get_billing_portal_link` lets a paying user change or cancel.
 
 ## Countries
 
