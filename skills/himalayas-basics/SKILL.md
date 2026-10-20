@@ -86,9 +86,9 @@ are enforced by the tools:
 | Tracker, profile, apply links (50 a day), inbox | Yes | Yes |
 | Tailored resume and cover letter | One of each, ever | Every job |
 | New matches (`get_new_matches`) | The count only | The jobs |
-| Interview practice | One text mock interview | 30 minutes a month of spoken mock interviews |
+| Interview practice | One text mock interview | 30 minutes a month of spoken mock interviews, scored and saved to track progress |
 | Job-match emails | Weekly | Daily |
-| Verified badge ID check | US$5 once | One every 30 days |
+| Identity and work permit verification (verified badge) | US$5 once | Every 30 days |
 
 How to handle a Plus feature:
 

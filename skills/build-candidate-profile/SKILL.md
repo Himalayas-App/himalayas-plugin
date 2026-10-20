@@ -43,10 +43,11 @@ Show the changes before writing them, then read the profile back.
 - `list_headshots` lists headshots the user already made on Himalayas, and
   `use_headshot_as_profile_photo` sets one as the photo. `get_headshots_link`
   returns the page where they make new ones.
-- `get_verification_link` returns the next step for the verified badge: the
-  status, an ID check link, or a checkout link. A passport or national ID also
-  verifies the user's work permit. The user does the check or payment on Stripe
-  themselves.
+- `get_verification_link` returns the next step for verifying the user's
+  identity and work permits (the verified badge): the status, a verification
+  link, or a checkout link. A passport or national ID verifies identity and the
+  work permit for that country; a driver's licence verifies identity only. The
+  user does the verification or payment on Stripe themselves.
 
 ## 5. Settings
 
