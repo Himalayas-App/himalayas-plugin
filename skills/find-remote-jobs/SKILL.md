@@ -59,4 +59,5 @@ Offer to save jobs to the tracker (see
 [track-applications](../track-applications/SKILL.md)) or to start applying
 (see [apply-to-jobs](../apply-to-jobs/SKILL.md)). When the user passes on a
 match, `skip_job` with the reason keeps it out of future matches; confirm
-first.
+first. Use the `job_closed` reason only when the listing really is closed: it
+reports the job as expired for everyone.

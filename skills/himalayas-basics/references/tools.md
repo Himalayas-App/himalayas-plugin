@@ -23,7 +23,7 @@ Changes, removes, sends or spends; always confirm. Params: `company_slug` string
 Adds data; confirm first. Params: none
 
 ### `skip_job`: Skip job
-Adds data; confirm first. Params: `company_slug` string, `job_slug` string, `reason` (job_closed|needs_account|location_or_visa_restricted|pay_too_low|wrong_timezone|not_really_remote|wrong_seniority|wrong_role|not_interested|other), `detail` string
+Changes, removes, sends or spends; always confirm. Params: `company_slug` string, `job_slug` string, `reason` (job_closed|needs_account|location_or_visa_restricted|pay_too_low|wrong_timezone|not_really_remote|wrong_seniority|wrong_role|not_interested|other), `detail` string
 
 ### `get_plus_checkout_link`: Get Himalayas Plus checkout link
 Adds data; confirm first. Params: `billing_interval` (month|year)
@@ -59,7 +59,7 @@ Adds data; confirm first. Params: `type` (missing_capability|bug|unclear_documen
 Read-only. Params: none
 
 ### `save_job`: Save job to tracker
-Adds data; confirm first. Params: `title` string, `company_name` string, `status` (seen|saved|applied|interviewing|negotiation|hired|archived), `base_salary` number, `max_salary` number, `currency` string, `excitement` number, `notes` string, `app_link` string, `himalayas_link` string
+Changes, removes, sends or spends; always confirm. Params: `title` string, `company_name` string, `status` (seen|saved|applied|interviewing|negotiation|hired|archived), `base_salary` number, `max_salary` number, `currency` string, `excitement` number, `notes` string, `app_link` string, `himalayas_link` string
 
 ### `get_saved_jobs`: Get saved jobs
 Read-only. Params: none

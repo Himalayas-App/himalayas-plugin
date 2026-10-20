@@ -22,7 +22,9 @@ The tracker and inbox need a Himalayas account.
 | `archived` | Put away |
 
 - **Save a job:** `save_job` with the title, company and the Himalayas link.
-  `excitement` (0 to 5) and `notes` help later reviews.
+  `excitement` (0 to 5) and `notes` help later reviews. Saving a job that is
+  already in the tracker overwrites its notes, salary and status, so check
+  `get_saved_jobs` first and use `update_job_status` for a tracked job.
 - **Move a job:** `update_job_status` with the id and the new `status`.
 - **Record an ending:** use `outcome` instead of a status for an applied job
   that ended without progressing: `rejected`, `no_response` (no reply after 45
