@@ -25,7 +25,7 @@
   "interface": {
     "displayName": "Himalayas",
     "shortDescription": "Find remote jobs and hire remote talent from ChatGPT and Codex",
-    "longDescription": "Himalayas is a remote jobs marketplace. These skills connect to the hosted Himalayas MCP to search remote jobs and companies, check salary benchmarks, tailor a resume and cover letter to a job, track applications and practise interviews, and, for employers, post jobs, keep a company profile current and message candidates, confirming every change first.",
+    "longDescription": "Himalayas is a remote jobs marketplace. These skills connect to the hosted Himalayas MCP to search remote jobs and companies, check salary benchmarks, tailor a resume and cover letter to a job, track applications and practise interviews, and, for employers, post jobs, keep a company profile current and message candidates, confirming changes first.",
     "developerName": "Himalayas",
     "category": "Productivity",
     "capabilities": [
