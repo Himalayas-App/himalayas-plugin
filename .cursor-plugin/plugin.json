@@ -1,0 +1,25 @@
+{
+  "name": "himalayas",
+  "version": "1.0.0",
+  "description": "Find remote jobs and hire remote talent on Himalayas from Cursor: search jobs and companies, check salaries, track applications, and post jobs through the hosted Himalayas MCP.",
+  "author": {
+    "name": "Himalayas",
+    "email": "hi@himalayas.app"
+  },
+  "homepage": "https://himalayas.app/docs/remote-jobs-mcp",
+  "repository": "https://github.com/Himalayas-App/himalayas-plugin",
+  "license": "MIT",
+  "keywords": [
+    "himalayas",
+    "remote-jobs",
+    "jobs",
+    "job-search",
+    "careers",
+    "hiring",
+    "recruiting",
+    "salaries"
+  ],
+  "logo": "assets/himalayas.svg",
+  "skills": "skills",
+  "mcpServers": "./mcp.json"
+}

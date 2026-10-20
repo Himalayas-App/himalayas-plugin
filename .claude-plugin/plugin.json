@@ -1,0 +1,29 @@
+{
+  "name": "himalayas",
+  "displayName": "Himalayas",
+  "version": "1.0.0",
+  "description": "Himalayas is a remote jobs marketplace. This plugin connects Claude to Himalayas so it can search remote jobs and companies, check salaries, tailor a resume and cover letter, track applications and practise interviews for job seekers, and post jobs, manage a company profile and message candidates for employers, asking before every change.",
+  "author": {
+    "name": "Himalayas",
+    "email": "hi@himalayas.app",
+    "url": "https://himalayas.app"
+  },
+  "homepage": "https://himalayas.app/docs/remote-jobs-mcp",
+  "repository": "https://github.com/Himalayas-App/himalayas-plugin",
+  "license": "MIT",
+  "keywords": [
+    "himalayas",
+    "remote-jobs",
+    "jobs",
+    "job-search",
+    "careers",
+    "hiring",
+    "recruiting",
+    "salaries"
+  ],
+  "icon": "./.claude-plugin/icon.png",
+  "documentationUrl": "https://himalayas.app/docs/remote-jobs-mcp",
+  "supportUrl": "https://himalayas.app/docs",
+  "privacyPolicyUrl": "https://himalayas.app/privacy",
+  "termsOfServiceUrl": "https://himalayas.app/terms"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "himalayas",
+  "version": "1.0.0",
+  "description": "Himalayas workflows for remote job search and hiring: search jobs and companies, check salaries, tailor applications, track them, and post jobs and source candidates through the hosted Himalayas MCP.",
+  "author": {
+    "name": "Himalayas",
+    "email": "hi@himalayas.app",
+    "url": "https://himalayas.app"
+  },
+  "homepage": "https://himalayas.app/docs/remote-jobs-mcp",
+  "repository": "https://github.com/Himalayas-App/himalayas-plugin",
+  "license": "MIT",
+  "keywords": [
+    "himalayas",
+    "remote-jobs",
+    "jobs",
+    "job-search",
+    "careers",
+    "hiring",
+    "recruiting",
+    "salaries"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json",
+  "interface": {
+    "displayName": "Himalayas",
+    "shortDescription": "Find remote jobs and hire remote talent from ChatGPT and Codex",
+    "longDescription": "Himalayas is a remote jobs marketplace. These skills connect to the hosted Himalayas MCP to search remote jobs and companies, check salary benchmarks, tailor a resume and cover letter to a job, track applications and practise interviews, and, for employers, post jobs, keep a company profile current and message candidates, confirming every change first.",
+    "developerName": "Himalayas",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://himalayas.app/docs/remote-jobs-mcp",
+    "privacyPolicyURL": "https://himalayas.app/privacy",
+    "termsOfServiceURL": "https://himalayas.app/terms",
+    "defaultPrompt": "Find remote jobs that match my Himalayas profile",
+    "brandColor": "#553C9A",
+    "logo": "./assets/himalayas.png",
+    "screenshots": []
+  }
+}
