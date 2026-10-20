@@ -39,8 +39,9 @@ The tracker and inbox need a Himalayas account.
 applications with no outcome yet. Ask the user about them once per
 conversation, at a natural point, not on every call. Fit the question to the
 stage: applied, did they hear back; interviewing, how is it going; offer, did
-they take it. Record each answer the way the list describes, and change
-nothing when there's no news.
+they take it. Record each answer the way the list describes: an application with no
+reply after 45 or more days gets outcome `no_response`, and any other "no
+news yet" changes nothing.
 
 ## Weekly review
 
