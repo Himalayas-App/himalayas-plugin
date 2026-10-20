@@ -2,7 +2,7 @@
   "name": "himalayas",
   "displayName": "Himalayas",
   "version": "1.0.0",
-  "description": "Himalayas is a remote jobs marketplace. This plugin connects Claude to Himalayas so it can search remote jobs and companies, check salaries, tailor a resume and cover letter, track applications and practise interviews for job seekers, and post jobs, manage a company profile and message candidates for employers, asking before every change.",
+  "description": "Himalayas is a remote jobs marketplace. This plugin connects Claude to Himalayas so it can search remote jobs and companies, check salaries, tailor a resume and cover letter, track applications and practise interviews for job seekers, and post jobs, manage a company profile and message candidates for employers, asking before changes.",
   "author": {
     "name": "Himalayas",
     "email": "hi@himalayas.app",

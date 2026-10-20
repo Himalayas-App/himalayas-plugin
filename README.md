@@ -10,9 +10,10 @@ tools. This plugin lets Claude work on Himalayas with you.
 - **Employers:** post and manage remote jobs, keep your company profile
   current, search candidates and message them.
 
-Claude asks before every change. Messages to companies or candidates are
-shown to you word for word before they are sent, and payments, applications
-and ID checks always happen in your own browser.
+Claude asks before anything that changes or removes data, sends a message or
+costs money. Messages to companies or candidates are shown to you word for word
+before they are sent, and payments, applications and ID checks always happen in
+your own browser.
 
 ## What it connects to
 
@@ -75,8 +76,8 @@ Every command works on a free Himalayas account. A free account covers
 search, salary data, the tracker, the profile, applying, one tailored resume
 and cover letter, and one text mock interview. Himalayas Plus (US$9 a month) adds tailored documents for every job,
 new matches between sessions, spoken interview practice and more. Employers
-post jobs for free, with optional paid extras. Claude mentions paid features
-only when you ask or a task needs one, and you pay on Stripe yourself.
+post jobs for free, with optional paid extras. When a task needs a paid
+feature, Himalayas says so, and you pay on Stripe yourself.
 
 ## Install
 
