@@ -52,6 +52,12 @@ employer's application link and marks the job as applied in the tracker. The
 user opens the link and submits the application. Never fill in the employer's
 form for them. The limit is 50 links per account per day.
 
+If the user ends up not applying to a job you got the link for (they compared
+it and passed, the form was blocked, or the posting is gone), record that
+before you finish: `update_job_status` with the tracker ID from the reply,
+outcome `didnt_apply` and a reason (`job_closed` if the posting is gone).
+Otherwise it stays as applied and the user is asked whether they heard back.
+
 ## 5. Prepare for interviews
 
 - `get_interview_practice_link` returns the Himalayas page where the user

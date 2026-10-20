@@ -33,6 +33,15 @@ The tracker and inbox need a Himalayas account.
   an outcome.
 - **Remove a job:** `remove_saved_job`. Confirm first; it can't be undone.
 
+## Follow-ups due
+
+`get_saved_jobs` and `get_my_profile` can end with a "Follow-ups due" list:
+applications with no outcome yet. Ask the user about them once per
+conversation, at a natural point, not on every call. Fit the question to the
+stage: applied, did they hear back; interviewing, how is it going; offer, did
+they take it. Record each answer the way the list describes, and change
+nothing when there's no news.
+
 ## Weekly review
 
 When the user asks how their search is going:
