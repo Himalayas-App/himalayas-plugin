@@ -13,8 +13,8 @@
     {
       "name": "himalayas",
       "source": "./",
-      "version": "1.0.0",
-      "description": "Find remote jobs, tailor applications and track them, or post jobs and source candidates, on Himalayas from Claude."
+      "version": "1.0.1",
+      "description": "Remote jobs: job search, salary data and application tracking, or post a job and hire candidates"
     }
   ]
 }

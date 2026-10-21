@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "himalayas",
-  "version": "1.0.0",
-  "description": "Find remote jobs and hire remote talent with AI agents: search jobs and companies, check salaries, tailor and track applications, and post jobs and source candidates via the hosted Himalayas MCP.",
+  "version": "1.0.1",
+  "description": "Himalayas is a remote jobs marketplace. Job seekers search remote jobs by role, country, seniority and salary, save them to an application tracker, tailor a resume and cover letter, get the employer's apply link, track each application to hired and reply to recruiters. Employers post remote jobs for free, search candidates by skill and country and message them. Salary data and company profiles need no account; the tracker and employer tools use a Himalayas sign-in.",
   "author": {
     "name": "Himalayas",
     "url": "https://himalayas.app"
@@ -13,11 +13,16 @@
   "keywords": [
     "himalayas",
     "remote-jobs",
-    "jobs",
     "job-search",
-    "careers",
+    "job-applications",
+    "application-tracker",
+    "resume",
+    "cover-letter",
+    "salary-data",
+    "work-from-home",
     "hiring",
     "recruiting",
-    "salaries"
+    "post-a-job",
+    "remote-talent"
   ]
 }
