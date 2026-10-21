@@ -103,7 +103,8 @@
             }
           ]
         },
-        "commerce": false
+        "commerce": false,
+        "demo_recording_url": "https://youtu.be/6F26Rrw7_Os"
       },
       "publication": {
         "release_notes": "First release of Himalayas for ChatGPT and Codex. Search remote jobs, companies and salaries, manage your profile, documents and application tracker, and post jobs and contact candidates as an employer."
