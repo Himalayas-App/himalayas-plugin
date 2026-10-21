@@ -1,0 +1,10 @@
+{
+  "name": "himalayas",
+  "version": "1.0.1",
+  "description": "Remote jobs: job search, salary data and application tracking, or post a job and hire candidates",
+  "mcpServers": {
+    "himalayas": {
+      "httpUrl": "https://mcp.himalayas.app/mcp"
+    }
+  }
+}

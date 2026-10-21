@@ -85,6 +85,8 @@ feature, Himalayas says so, and you pay on Stripe yourself.
   `/plugin marketplace add Himalayas-App/himalayas-plugin` and then
   `/plugin install himalayas@himalayas`.
 - **Codex, Cursor and Grok**: load this repository as a plugin.
+- **Gemini CLI**: run
+  `gemini extensions install https://github.com/Himalayas-App/himalayas-plugin`.
 
 ## Help
 
