@@ -4,12 +4,9 @@
 Usage:
   scripts/chatgpt-tools-md.py            # read https://mcp.himalayas.app/mcp/chatgpt
   scripts/chatgpt-tools-md.py --derive   # read /mcp and drop the tools /mcp/chatgpt leaves out
-
-Set HIMALAYAS_MCP_TOKEN to send a bearer token, if the route needs one.
 """
 
 import json
-import os
 import pathlib
 import sys
 import urllib.request
@@ -48,9 +45,6 @@ def fetch(url):
         "Accept": "application/json, text/event-stream",
         "User-Agent": "himalayas-plugin-tools-md",
     }
-    token = os.environ.get("HIMALAYAS_MCP_TOKEN")
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
     body = json.dumps({"jsonrpc": "2.0", "id": 1, "method": "tools/list"}).encode()
     req = urllib.request.Request(url, data=body, headers=headers, method="POST")
     with urllib.request.urlopen(req, timeout=30) as resp:
