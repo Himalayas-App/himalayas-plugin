@@ -79,7 +79,7 @@
               "description": "Employer reviews their company's job listings, including a draft.",
               "prompt": "List my company's jobs on Himalayas and show me the draft listing.",
               "tools_triggered": "list_company_jobs, show_company_job",
-              "expected_behavior": "Lists the jobs for Himalayas Directory Review, identifies the draft Senior Product Manager (test listing) with its status, then shows that listing's details. Nothing is published, edited or deleted."
+              "expected_behavior": "Lists the jobs for Himalayas Plugin Review, identifies the draft Senior Product Manager (test listing) with its status, then shows that listing's details. Nothing is published, edited or deleted."
             },
             {
               "description": "Read the job seeker's saved cover letter and suggest improvements without changing it.",
