@@ -2,7 +2,7 @@
   "name": "himalayas",
   "displayName": "Himalayas",
   "version": "1.0.1",
-  "description": "Himalayas is a remote jobs marketplace. Job seekers search remote jobs by role, country, seniority and salary, save them to an application tracker, tailor a resume and cover letter, get the employer's apply link, track each application to hired and reply to recruiters. Employers post remote jobs for free, search candidates by skill and country and message them. Salary data and company profiles need no account; the tracker and employer tools use a Himalayas sign-in.",
+  "description": "Himalayas is a remote jobs marketplace. Job seekers search remote jobs by role, country, seniority and salary, save them to an application tracker, tailor a resume and cover letter, get the employer's apply link, track each application to hired and reply to recruiters. Employers post remote jobs for free, search candidates by skill and country and message them. Job search, salary data and company profiles need no account; everything else uses a Himalayas sign-in.",
   "author": {
     "name": "Himalayas",
     "email": "hi@himalayas.app",

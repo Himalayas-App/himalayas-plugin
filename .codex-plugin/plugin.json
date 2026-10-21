@@ -1,7 +1,7 @@
 {
   "name": "himalayas",
-  "version": "1.0.0",
-  "description": "Himalayas workflows for remote job search and hiring: search jobs and companies, check salaries, tailor applications, track them, and post jobs and source candidates through the hosted Himalayas MCP.",
+  "version": "1.0.1",
+  "description": "Himalayas is a remote jobs marketplace. Job seekers search remote jobs by role, country, seniority and salary, save them to an application tracker, tailor a resume and cover letter, get the employer's apply link, track each application to hired and reply to recruiters. Employers post remote jobs for free, search candidates by skill and country and message them. Job search, salary data and company profiles need no account; everything else uses a Himalayas sign-in.",
   "author": {
     "name": "Himalayas",
     "email": "hi@himalayas.app",
@@ -13,12 +13,17 @@
   "keywords": [
     "himalayas",
     "remote-jobs",
-    "jobs",
     "job-search",
-    "careers",
+    "job-applications",
+    "application-tracker",
+    "resume",
+    "cover-letter",
+    "salary-data",
+    "work-from-home",
     "hiring",
     "recruiting",
-    "salaries"
+    "post-a-job",
+    "remote-talent"
   ],
   "skills": "./skills/",
   "mcpServers": "./mcp.json",

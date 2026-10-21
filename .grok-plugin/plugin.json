@@ -1,7 +1,7 @@
 {
   "name": "himalayas",
-  "version": "1.0.0",
-  "description": "Himalayas plugin for Grok Build. Hosted MCP plus skills to search remote jobs, track applications, and post jobs and source candidates.",
+  "version": "1.0.1",
+  "description": "Himalayas is a remote jobs marketplace. Job seekers search remote jobs by role, country, seniority and salary, save them to an application tracker, tailor a resume and cover letter, get the employer's apply link, track each application to hired and reply to recruiters. Employers post remote jobs for free, search candidates by skill and country and message them. Job search, salary data and company profiles need no account; everything else uses a Himalayas sign-in.",
   "author": {
     "name": "Himalayas",
     "url": "https://himalayas.app"
@@ -12,12 +12,17 @@
   "keywords": [
     "himalayas",
     "remote-jobs",
-    "jobs",
     "job-search",
-    "careers",
+    "job-applications",
+    "application-tracker",
+    "resume",
+    "cover-letter",
+    "salary-data",
+    "work-from-home",
     "hiring",
     "recruiting",
-    "salaries"
+    "post-a-job",
+    "remote-talent"
   ],
   "mcpServers": "./mcp.json"
 }
