@@ -182,7 +182,7 @@ Read-only. Params: `page` integer
 Read-only. Params: `job_slug` string
 
 ### `create_company_job`: Create company job
-Changes, removes or sends; always confirm. Params: `title` string, `description` string, `employment_type` (Full Time|Part Time|Contractor|Temporary|Intern|Volunteer|Other), `seniority` array, `app_link_or_email` string, `valid_through` string, `base_salary` number, `max_salary` number, `salary_country` string, `category_list` string, `skill_list` string, `draft` boolean, `screening_questions` array
+Adds data; confirm first. Params: `title` string, `description` string, `employment_type` (Full Time|Part Time|Contractor|Temporary|Intern|Volunteer|Other), `seniority` array, `app_link_or_email` string, `valid_through` string, `base_salary` number, `max_salary` number, `salary_country` string, `category_list` string, `skill_list` string, `draft` boolean, `screening_questions` array
 
 ### `update_company_job`: Update company job
 Changes, removes or sends; always confirm. Params: `job_slug` string, `title` string, `description` string, `employment_type` (Full Time|Part Time|Contractor|Temporary|Intern|Volunteer|Other), `seniority` array, `app_link_or_email` string, `valid_through` string, `base_salary` number, `max_salary` number, `salary_country` string, `category_list` string, `skill_list` string, `draft` boolean, `screening_questions` array
