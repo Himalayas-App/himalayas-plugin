@@ -47,7 +47,7 @@
         "termsOfServiceURL": "https://himalayas.app/terms",
         "defaultPrompt": [
           "Find remote jobs that match my Himalayas profile",
-          "What does a senior product manager earn working remotely from Australia?",
+          "What does a senior product manager earn working remotely in the United States?",
           "Help me post a remote job for my company"
         ],
         "brandColor": "#553C9A",
@@ -70,10 +70,10 @@
               "expected_behavior": "Lists the three tracked jobs grouped by status (two saved, one applied) with title, company and link, and may ask once whether the applied job has replied. Nothing is changed."
             },
             {
-              "description": "Benchmark pay for a role, seniority and country.",
-              "prompt": "What does a senior product manager earn working remotely from Australia?",
+              "description": "Salary benchmark for a role, seniority and country. Uses public data, so it works before signing in.",
+              "prompt": "What does a senior product manager earn working remotely in the United States?",
               "tools_triggered": "get_salary_data",
-              "expected_behavior": "Returns the minimum, median and maximum salary for a senior product manager in Australia, labelled as US dollars a year, and names the country and seniority used."
+              "expected_behavior": "Returns Himalayas salary data for a senior product manager in the United States: the median, low and high annual salary in US dollars and how many data points it is based on, and names the country and seniority used."
             },
             {
               "description": "Employer reviews their company's job listings, including a draft.",
