@@ -67,7 +67,14 @@ Follow these steps for every task that changes the user's account.
   never make up a link. Only share links a tool returned.
 - **Messages speak for the user.** A candidate reads an employer's message as
   coming from the company, and a company reads a job seeker's reply as coming
-  from them. Show the exact text and get an OK before sending.
+  from them. `start_conversation` (with a message), `send_message` and
+  `reply_to_message` send in two calls. The first, without `confirm_token`,
+  sends nothing and returns the exact text and a token: that call is the
+  draft, so make it without asking. Show the user that text, and only after
+  they say yes, call again with the same recipient, the same message and the
+  token. A changed message needs a new preview, and a token sends once; if a
+  token is reported as already used, check the conversation before getting a
+  new preview, so nothing is sent twice.
 - **Personal data stays out of chat** unless the user asks for it. Summarise
   candidates by role, skills and location rather than copying their profile.
 - **Free first.** Every task has a path that works on a free account. Never

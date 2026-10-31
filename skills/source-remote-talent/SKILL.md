@@ -31,14 +31,14 @@ For pay context, add a benchmark from `get_salary_data`.
   first message. If one already exists, it returns it.
 - `send_message` sends a message in an existing conversation.
 
-Both send in two calls. The first call, without `confirm_token`, sends nothing
-and returns the exact text and a token. Show the user that text. Only after
-they say yes, call again with the same message and the token. A changed
-message needs a new preview, and a token sends once.
+A message goes out in two calls, as "Messages speak for the user" in
+[himalayas-basics](../himalayas-basics/SKILL.md) describes: a preview first,
+then the same recipient, message and token after the user says yes. Without a
+message, `start_conversation` opens the conversation in one call.
 
 The candidate reads every message as coming from the user's company. Draft a
-short, specific message that says why this candidate fits this role. Send one message per
-candidate the user approved; never message a list in bulk without approval
+short, specific message that says why this candidate fits this role. Send one
+message per candidate the user approved; never message a list in bulk without approval
 for each one.
 
 ## 4. Manage replies

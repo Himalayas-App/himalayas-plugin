@@ -59,6 +59,9 @@ checkout `session_id` shows whether payment went through.
 - `list_company_jobs` shows each job's status, views, clicks and expiry.
 - `update_company_job` changes only the fields you pass. For
   `screening_questions`, pass the full set: questions left out are removed.
+  Editing is free; if the job has paid extras that aren't paid yet, the reply
+  includes their checkout link. Tell the user it is for the extras, not the
+  edit.
 - Extend a job by moving `valid_through`.
 - `delete_company_job` removes a job and can't be undone. Confirm first, and
   offer to let it expire instead.
