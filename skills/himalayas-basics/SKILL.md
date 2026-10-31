@@ -69,8 +69,9 @@ Follow these steps for every task that changes the user's account.
   coming from the company, and a company reads a job seeker's reply as coming
   from them. `start_conversation` (with a message), `send_message` and
   `reply_to_message` send in two calls. The first, without `confirm_token`,
-  sends nothing and returns the exact text and a token: that call is the
-  draft, so make it without asking. Show the user that text, and only after
+  sends nothing and returns the exact text and a token. When the user wants a
+  message written, that call is how you show the draft, so it needs no
+  separate yes. Show the user that text, and only after
   they say yes, call again with the same recipient, the same message and the
   token. A changed message needs a new preview, and a token sends once; if a
   token is reported as already used, check the conversation before getting a

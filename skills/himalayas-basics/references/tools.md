@@ -1,6 +1,6 @@
 # Himalayas tools
 
-Every tool on the hosted Himalayas MCP (`https://mcp.himalayas.app/mcp`), with its parameters. Allowed values are listed in parentheses. "Read-only" tools never change anything. For every other tool, confirm with the user before calling it, except the first call of a message tool, which only returns a preview to show the user.
+Every tool on the hosted Himalayas MCP (`https://mcp.himalayas.app/mcp`), with its parameters. Allowed values are listed in parentheses. "Read-only" tools never change anything. For every other tool, confirm with the user before calling it, except the first call of a message tool that includes a message, which only returns a preview to show the user.
 
 Job, company and salary tools work without signing in. Every other tool uses the Himalayas account the user connected through OAuth; employer tools need an employer account.
 
@@ -215,7 +215,7 @@ Read-only. Params: none
 Read-only. Params: `room_name` string, `talent_slug` string
 
 ### `start_conversation`: Start conversation with candidate
-Opens a conversation at once. With a `message`, a message another person reads: without `confirm_token` it only returns a preview and a token, and nothing is created; the same message with that token opens it and sends, once. Params: `talent_slug` string, `message` string, `confirm_token` string
+With a `message`: without `confirm_token` it only returns a preview and a token, and nothing is created; the same message with that token opens the conversation and sends it, once. Without a `message`, it opens the conversation at once; confirm first. Params: `talent_slug` string, `message` string, `confirm_token` string
 
 ### `send_message`: Send message to candidate
 Sends a message another person reads. Without `confirm_token` it only returns a preview and a token; the same message with that token sends it, once. Params: `message` string, `room_name` string, `talent_slug` string, `confirm_token` string

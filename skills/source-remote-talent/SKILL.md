@@ -34,7 +34,8 @@ For pay context, add a benchmark from `get_salary_data`.
 A message goes out in two calls, as "Messages speak for the user" in
 [himalayas-basics](../himalayas-basics/SKILL.md) describes: a preview first,
 then the same recipient, message and token after the user says yes. Without a
-message, `start_conversation` opens the conversation in one call.
+message, `start_conversation` opens the conversation in one call; confirm
+first.
 
 The candidate reads every message as coming from the user's company. Draft a
 short, specific message that says why this candidate fits this role. Send one

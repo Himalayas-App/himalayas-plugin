@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "himalayas",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Himalayas is a remote jobs marketplace. Job seekers search remote jobs by role, country, seniority and salary, save them to an application tracker, tailor a resume and cover letter, get the employer's apply link, track each application to hired and reply to recruiters. Employers post remote jobs, search candidates by skill and country and message them. Job search, salary data and company profiles need no account; everything else uses a Himalayas sign-in.",
   "author": {
     "name": "Himalayas",
