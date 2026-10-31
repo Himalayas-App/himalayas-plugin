@@ -31,9 +31,13 @@ For pay context, add a benchmark from `get_salary_data`.
   first message. If one already exists, it returns it.
 - `send_message` sends a message in an existing conversation.
 
+Both send in two calls. The first call, without `confirm_token`, sends nothing
+and returns the exact text and a token. Show the user that text. Only after
+they say yes, call again with the same message and the token. A changed
+message needs a new preview, and a token sends once.
+
 The candidate reads every message as coming from the user's company. Draft a
-short, specific message that says why this candidate fits this role, show the
-exact text, and send only after the user says yes. Send one message per
+short, specific message that says why this candidate fits this role. Send one message per
 candidate the user approved; never message a list in bulk without approval
 for each one.
 

@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.2
+
+- Account-free job posting (`post_job_public`) is gone from the connector;
+  jobs are posted from the account that owns the company.
+- Messages to candidates and companies are draft-then-send: a preview and a
+  `confirm_token` first, then a second call sends that exact text once.
+- The tool reference says connector talent search has no paid placement, and
+  which job tools return a Stripe checkout.
+
 ## 1.0.1
 
 - Listing text leads with remote jobs and names both workflows: job search,
