@@ -1,6 +1,6 @@
 ---
 name: post-remote-jobs
-description: Post and manage remote job listings on Himalayas for an employer, from writing the listing and screening questions to submitting it for approval, paid extras, and keeping listings current with views, clicks and expiry. Also covers posting a paid job without an account. Use when the user wants to post, edit, extend, close or check a job on Himalayas, or promote a listing.
+description: Post and manage remote job listings on Himalayas for an employer, from writing the listing and screening questions to submitting it for approval, paid extras, and keeping listings current with views, clicks and expiry. Use when the user wants to post, edit, extend, close or check a job on Himalayas, or promote a listing.
 ---
 
 # Post remote jobs
@@ -11,9 +11,9 @@ Follow [himalayas-basics](../himalayas-basics/SKILL.md) for the shared rules.
 
 - **Employer account (usual):** `create_company_job`. Posting is free, and
   each job is reviewed by Himalayas before it goes live.
-- **No account:** `post_job_public` posts a paid job with the user's email and
-  company details, and returns a Stripe checkout link. The job goes live after
-  payment. Use it only when the user has no employer account and wants to pay.
+- **No employer account:** jobs are only posted from the Himalayas account that
+  owns the company, so the user signs up on himalayas.app and adds their
+  company first. There is no way to post without an account.
 
 ## 1. Gather the listing
 
@@ -59,6 +59,9 @@ checkout `session_id` shows whether payment went through.
 - `list_company_jobs` shows each job's status, views, clicks and expiry.
 - `update_company_job` changes only the fields you pass. For
   `screening_questions`, pass the full set: questions left out are removed.
+  Editing is free; if the job has paid extras that aren't paid yet, the reply
+  includes their checkout link. Tell the user it is for the extras, not the
+  edit.
 - Extend a job by moving `valid_through`.
 - `delete_company_job` removes a job and can't be undone. Confirm first, and
   offer to let it expire instead.

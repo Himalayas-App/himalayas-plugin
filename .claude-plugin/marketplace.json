@@ -13,7 +13,7 @@
     {
       "name": "himalayas",
       "source": "./",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "Remote jobs: job search, salary data and application tracking, or post a job and hire candidates"
     }
   ]

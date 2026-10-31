@@ -1,6 +1,6 @@
 # Himalayas tools
 
-Every tool on the hosted Himalayas MCP (`https://mcp.himalayas.app/mcp`), with its parameters. Allowed values are listed in parentheses. "Read-only" tools never change anything. For every other tool, confirm with the user before calling it.
+Every tool on the hosted Himalayas MCP (`https://mcp.himalayas.app/mcp`), with its parameters. Allowed values are listed in parentheses. "Read-only" tools never change anything. For every other tool, confirm with the user before calling it, except the first call of a message tool that includes a message, which only returns a preview to show the user.
 
 Job, company and salary tools work without signing in. Every other tool uses the Himalayas account the user connected through OAuth; employer tools need an employer account.
 
@@ -164,7 +164,7 @@ Read-only. Params: none
 Changes, removes, sends or spends; always confirm. Params: `stacks` array
 
 ### `search_talent`: Search talent
-Read-only. Params: `keyword` string, `country` string, `page` integer, `sort` (relevant|recent)
+Read-only. No paid placement: Plus and verified candidates rank like everyone else. Params: `keyword` string, `country` string, `page` integer, `sort` (relevant|recent)
 
 ### `get_talent_profile`: Get talent profile
 Read-only. Params: `talent_slug` string
@@ -194,16 +194,13 @@ Read-only. Params: `page` integer
 Read-only. Params: `job_slug` string
 
 ### `create_company_job`: Create company job
-Adds data; confirm first. Params: `title` string, `description` string, `employment_type` (Full Time|Part Time|Contractor|Temporary|Intern|Volunteer|Other), `seniority` array, `app_link_or_email` string, `valid_through` string, `base_salary` number, `max_salary` number, `salary_country` string, `category_list` string, `skill_list` string, `draft` boolean, `screening_questions` array, `extras` array
+Adds data; confirm first, and confirm separately before passing `extras`, which cost money. Posting is free; `extras` are paid and return a Stripe checkout link the user pays themselves. Params: `title` string, `description` string, `employment_type` (Full Time|Part Time|Contractor|Temporary|Intern|Volunteer|Other), `seniority` array, `app_link_or_email` string, `valid_through` string, `base_salary` number, `max_salary` number, `salary_country` string, `category_list` string, `skill_list` string, `draft` boolean, `screening_questions` array, `extras` array
 
 ### `update_company_job`: Update company job
-Changes, removes, sends or spends; always confirm. Params: `job_slug` string, `title` string, `description` string, `employment_type` (Full Time|Part Time|Contractor|Temporary|Intern|Volunteer|Other), `seniority` array, `app_link_or_email` string, `valid_through` string, `base_salary` number, `max_salary` number, `salary_country` string, `category_list` string, `skill_list` string, `draft` boolean, `screening_questions` array
+Changes, removes, sends or spends; always confirm. Returns a Stripe checkout link if the job has unpaid extras. Params: `job_slug` string, `title` string, `description` string, `employment_type` (Full Time|Part Time|Contractor|Temporary|Intern|Volunteer|Other), `seniority` array, `app_link_or_email` string, `valid_through` string, `base_salary` number, `max_salary` number, `salary_country` string, `category_list` string, `skill_list` string, `draft` boolean, `screening_questions` array
 
 ### `delete_company_job`: Delete company job
 Changes, removes, sends or spends; always confirm. Params: `job_slug` string
-
-### `post_job_public`: Post a paid job without an account
-Changes, removes, sends or spends; always confirm. Params: `customer_email` string, `company_name` string, `company_url` string, `title` string, `description` string, `employment_type` (Full Time|Part Time|Contractor|Temporary|Intern|Volunteer|Other), `seniority` array, `app_link_or_email` string, `valid_through` string, `base_salary` number, `max_salary` number, `salary_country` string, `category_list` string, `skill_list` string
 
 ### `purchase_job_extras`: Purchase job extras
 Changes, removes, sends or spends; always confirm. Params: `job_slug` string, `extras` array
@@ -218,10 +215,10 @@ Read-only. Params: none
 Read-only. Params: `room_name` string, `talent_slug` string
 
 ### `start_conversation`: Start conversation with candidate
-Changes, removes, sends or spends; always confirm. Params: `talent_slug` string, `message` string
+With a `message`: without `confirm_token` it only returns a preview and a token, and nothing is created; the same message with that token opens the conversation and sends it, once. Without a `message`, it opens the conversation at once; confirm first. Params: `talent_slug` string, `message` string, `confirm_token` string
 
 ### `send_message`: Send message to candidate
-Changes, removes, sends or spends; always confirm. Params: `message` string, `room_name` string, `talent_slug` string
+Sends a message another person reads. Without `confirm_token` it only returns a preview and a token; the same message with that token sends it, once. Params: `message` string, `room_name` string, `talent_slug` string, `confirm_token` string
 
 ### `mark_message_read`: Mark employer message read
 Adds data; confirm first. Params: `message_id` number, `room_name` string, `talent_slug` string
@@ -236,7 +233,7 @@ Read-only. Params: none
 Read-only. Params: `room_name` string
 
 ### `reply_to_message`: Reply in inbox
-Changes, removes, sends or spends; always confirm. Params: `room_name` string, `message` string
+Sends a message another person reads. Without `confirm_token` it only returns a preview and a token; the same message with that token sends it, once. Params: `room_name` string, `message` string, `confirm_token` string
 
 ### `mark_my_message_read`: Mark inbox message read
 Adds data; confirm first. Params: `room_name` string, `message_id` number

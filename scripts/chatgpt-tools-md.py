@@ -24,7 +24,13 @@ EXCLUDED_TOOLS = {
     "get_verification_link",
     "join_radar_waitlist",
 }
-EXCLUDED_PARAMS = {"create_company_job": {"extras"}}
+EXCLUDED_PARAMS = {
+    "create_company_job": {"extras"},
+    # /mcp/chatgpt sends messages in one call.
+    "start_conversation": {"confirm_token"},
+    "send_message": {"confirm_token"},
+    "reply_to_message": {"confirm_token"},
+}
 
 OUT = (
     pathlib.Path(__file__).resolve().parent.parent
