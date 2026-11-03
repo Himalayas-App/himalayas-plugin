@@ -1,6 +1,6 @@
 ---
 name: himalayas-basics
-description: Shared working rules for every Himalayas task done through the Himalayas MCP, covering which tools need an account, reading before writing, confirming and verifying changes, links the user opens themselves, plan limits, errors, and problem reports. Use whenever the assistant is about to call a Himalayas tool, or when another Himalayas skill says to follow himalayas-basics.
+description: Shared working rules for every Himalayas task done through the Himalayas plugin, covering which tools need an account, reading before writing, confirming and verifying changes, links the user opens themselves, plan limits, errors, and problem reports. Use whenever the assistant is about to call a Himalayas tool, or when another Himalayas skill says to follow himalayas-basics.
 ---
 
 # Himalayas basics
