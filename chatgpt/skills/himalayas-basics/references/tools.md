@@ -14,13 +14,13 @@ Read-only. Params: `keyword` string, `page` integer, `country` string, `exclude_
 Read-only. Params: `company_slug` string, `job_slug` string
 
 ### `get_apply_link`: Get apply link
-Adds data; confirm first. Params: `company_slug` string, `job_slug` string
+Changes, removes or sends; always confirm. Params: `company_slug` string, `job_slug` string
 
 ### `generate_application_documents`: Tailor resume and cover letter
 Changes, removes or sends; always confirm. Params: `company_slug` string, `job_slug` string, `documents` array
 
 ### `get_new_matches`: Get new job matches
-Adds data; confirm first. Params: none
+Changes, removes or sends; always confirm. Params: none
 
 ### `skip_job`: Skip job
 Changes, removes or sends; always confirm. Params: `company_slug` string, `job_slug` string, `reason` (job_closed|needs_account|location_or_visa_restricted|pay_too_low|wrong_timezone|not_really_remote|wrong_seniority|wrong_role|not_interested|other), `detail` string
@@ -131,7 +131,7 @@ Changes, removes or sends; always confirm. Params: `id` number
 Read-only. Params: none
 
 ### `mark_notifications_read`: Mark notifications read
-Adds data; confirm first. Params: `id` number, `all` boolean
+Changes, removes or sends; always confirm. Params: `id` number, `all` boolean
 
 ### `list_coach_chats`: List career coach chats
 Read-only. Params: none
@@ -203,7 +203,7 @@ Changes, removes or sends; always confirm. Params: `talent_slug` string, `messag
 Changes, removes or sends; always confirm. Params: `message` string, `room_name` string, `talent_slug` string
 
 ### `mark_message_read`: Mark employer message read
-Adds data; confirm first. Params: `message_id` number, `room_name` string, `talent_slug` string
+Changes, removes or sends; always confirm. Params: `message_id` number, `room_name` string, `talent_slug` string
 
 ### `delete_conversation`: Delete employer conversation
 Changes, removes or sends; always confirm. Params: `room_name` string, `talent_slug` string
@@ -218,4 +218,4 @@ Read-only. Params: `room_name` string
 Changes, removes or sends; always confirm. Params: `room_name` string, `message` string
 
 ### `mark_my_message_read`: Mark inbox message read
-Adds data; confirm first. Params: `room_name` string, `message_id` number
+Changes, removes or sends; always confirm. Params: `room_name` string, `message_id` number
