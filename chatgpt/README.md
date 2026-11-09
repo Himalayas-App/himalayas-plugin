@@ -15,19 +15,21 @@ guidelines:
   `/mcp/chatgpt` route leaves out. Where a feature needs a Himalayas Plus plan,
   the skills say so in one sentence and carry on with the free path.
 - `skills/himalayas-basics/references/tools.md` lists exactly the tools on
-  `/mcp/chatgpt`. Regenerate it with `scripts/chatgpt-tools-md.py`.
+  `/mcp/chatgpt`. Regenerate it with `scripts/plugin/chatgpt-tools-md.py` in
+  the himalayas-mcp-private repo.
 
 There are no commands, hooks or other client-specific settings. When a
 canonical skill changes, make the same change here, keeping the edits above.
 
 ## Build
 
-From the repository root:
+The build script lives in the himalayas-mcp-private repo, because this repo
+holds no scripts. From that repo:
 
 ```bash
-scripts/package-chatgpt.sh
+scripts/plugin/package-chatgpt.sh path/to/himalayas-plugin
 ```
 
 It validates the manifests, checks listing limits, test cases and banned
-terms, and writes `dist/himalayas-chatgpt.zip` with this folder as its only
+terms, and writes `dist/himalayas-chatgpt.zip` in this repo with this folder as its only
 top-level directory. Upload that ZIP on the OpenAI plugins dashboard.

@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.3
+
+- The repository holds only Markdown, JSON and PNG files, as the Claude
+  plugin directory requires. The ChatGPT build scripts moved to the
+  himalayas-mcp-private repo (`scripts/plugin/`), and the Cursor logo is the
+  PNG. In `chatgpt/` only the README's build steps changed; its manifest and
+  skills are unchanged.
+
 ## 1.0.2
 
 - Account-free job posting (`post_job_public`) is gone from the connector;
