@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.4
+
+- Descriptions call Himalayas a remote job board, the words people use for
+  it, in every manifest, the README and the `himalayas-basics` skill. No
+  skill, command or tool changed.
+
 ## 1.0.3
 
 - The repository holds only Markdown, JSON and PNG files, as the Claude

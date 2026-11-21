@@ -5,7 +5,7 @@ description: Shared working rules for every Himalayas task done through the Hima
 
 # Himalayas basics
 
-Himalayas is a remote jobs marketplace: jobs, companies, salary data, career
+Himalayas is a remote job board: jobs, companies, salary data, career
 profiles, an application tracker, and employer tools. Every other Himalayas
 skill builds on this one. Read it once per conversation before the first
 Himalayas tool call.
