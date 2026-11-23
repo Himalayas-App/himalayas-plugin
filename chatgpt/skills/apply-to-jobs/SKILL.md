@@ -59,7 +59,8 @@ answers; a saved answer from step 3 can fill one in once the user has seen it.
 Never guess or answer for them. Call `get_apply_link` again with
 `screening_answers`: it returns the link when the answers meet the employer's
 requirements, and no link when they don't. That reply doesn't say which answer
-missed, so don't change answers the user didn't give and try again.
+missed, so don't retry with changed answers unless the user corrects one of
+their own.
 
 If the user ends up not applying to a job you got the link for (they compared
 it and passed, the form was blocked, or the posting is gone), record that
