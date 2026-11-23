@@ -1,6 +1,6 @@
 # Himalayas plugin
 
-[Himalayas](https://himalayas.app) is a remote jobs marketplace: jobs,
+[Himalayas](https://himalayas.app) is a remote job board: jobs,
 companies, salary data, career profiles, an application tracker, and employer
 tools. This plugin lets Claude work on Himalayas with you.
 
