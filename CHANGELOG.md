@@ -5,6 +5,10 @@
 - Descriptions call Himalayas a remote job board, the words people use for
   it, in every manifest, the README and the `himalayas-basics` skill. No
   skill, command or tool changed.
+- `apply-to-jobs` covers screening questions: `get_apply_link` may list an
+  employer's questions first, and returns the link once the user's own answers
+  meet the employer's requirements. The tool reference lists
+  `screening_answers`.
 
 ## 1.0.3
 
