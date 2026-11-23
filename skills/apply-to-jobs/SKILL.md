@@ -52,6 +52,14 @@ employer's application link and marks the job as applied in the tracker. The
 user opens the link and submits the application. Never fill in the employer's
 form for them. The limit is 50 links per account per day.
 
+Some employers ask screening questions first. Then the reply lists the
+questions instead of the link. Ask the user each one and use their own
+answers; a saved answer from step 3 can fill one in once the user has seen it.
+Never guess or answer for them. Call `get_apply_link` again with
+`screening_answers`: it returns the link when the answers meet the employer's
+requirements, and no link when they don't. That reply doesn't say which answer
+missed, so don't change answers the user didn't give and try again.
+
 If the user ends up not applying to a job you got the link for (they compared
 it and passed, the form was blocked, or the posting is gone), record that
 before you finish: `update_job_status` with the tracker ID from the reply,

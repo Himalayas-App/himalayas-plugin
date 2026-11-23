@@ -14,7 +14,7 @@ Read-only. Params: `keyword` string, `page` integer, `country` string, `exclude_
 Read-only. Params: `company_slug` string, `job_slug` string
 
 ### `get_apply_link`: Get apply link
-Adds data; confirm first. Params: `company_slug` string, `job_slug` string
+Adds data; confirm first. Params: `company_slug` string, `job_slug` string, `screening_answers` array
 
 ### `generate_application_documents`: Tailor resume and cover letter
 Changes, removes, sends or spends; always confirm. Params: `company_slug` string, `job_slug` string, `documents` array
