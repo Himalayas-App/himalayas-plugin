@@ -11,9 +11,9 @@ Follow [himalayas-basics](../himalayas-basics/SKILL.md) for the shared rules.
 
 - **Employer account (usual):** `create_company_job`. Posting is free, and
   each job is reviewed by Himalayas before it goes live.
-- **No employer account:** jobs are only posted from the Himalayas account that
-  owns the company, so the user signs up on himalayas.app and adds their
-  company first. There is no way to post without an account.
+- **No employer account:** no tool posts without one. The user can sign up on
+  himalayas.app and add their company to post for free, or post without an
+  account at https://himalayas.app/post, where the pinned listing is $299.
 
 ## 1. Gather the listing
 
